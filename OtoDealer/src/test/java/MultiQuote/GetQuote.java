@@ -1,4 +1,4 @@
-package MultiQuote;
+/*package MultiQuote;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -72,7 +72,7 @@ public class GetQuote extends ReportBaseClass{
 		JSONArray arr = obj.getJSONArray("data");
 		for (int i = 0; i < arr.length(); ++i) {
 
-			/*	if(arr.getJSONObject(i).getString("financier_name").equalsIgnoreCase("MUF")) {
+				if(arr.getJSONObject(i).getString("financier_name").equalsIgnoreCase("MUF")) {
 				int installment=arr.getJSONObject(i).getInt("quotes_data.installment");
 				int tenure=arr.getJSONObject(i).getInt("quotes_data.tenure");
 				int total_payment_to_dealer=arr.getJSONObject(i).getInt("quotes_data.total_payment_to_dealer");
@@ -83,7 +83,7 @@ public class GetQuote extends ReportBaseClass{
 
 			//	Object mrp=objinner.get("quotes_data.mrp");
 				System.out.println("  aaaa "+" "+objinner);
-			}*/
+			}
 			JSONObject objinner = (JSONObject) arr.getJSONObject(i).get("quotes_data");
 
 			switch(arr.getJSONObject(i).getString("financier_name")){  
@@ -171,7 +171,7 @@ public class GetQuote extends ReportBaseClass{
 					Assert.assertEquals(total_payment_to_dealer, Integer.parseInt(totalpayementtodealer));
 					Assert.assertEquals(tenure,Integer.parseInt(numofinst));
 
-					/*if(totaldp==Integer.parseInt(totalDP)) {
+					if(totaldp==Integer.parseInt(totalDP)) {
 					System.out.println("total dp match");
 				//	ExcelUtils.writSpecificCellData(Constants.OtoFinancerExcelFile,"MUFMQ",36,c,totaldp);
 					}else { 
@@ -184,7 +184,7 @@ public class GetQuote extends ReportBaseClass{
 						}
 						else {
 							System.out.println("else num of inst match");
-						}*/
+						}
 
 					//	System.out.println(objinner);
 				}
@@ -223,3 +223,4 @@ public class GetQuote extends ReportBaseClass{
 
 
 }
+*/
